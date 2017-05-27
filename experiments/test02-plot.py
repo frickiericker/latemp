@@ -11,7 +11,9 @@ def main():
     fig, ax = plt.subplots(figsize=(18, 9))
     for ring in rings:
         ring = np.array(ring)
-        ax.plot(ring[:, 0], ring[:, 1], lw=0.5)
+        x = ring[:, 0]
+        y = ring[:, 1]
+        ax.plot(x, y, lw=0.5)
     fig.savefig('test02.png')
 
 def load_country_rings():
